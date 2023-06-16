@@ -35,6 +35,9 @@ header {
 a {
     color: #ffffff;
     text-decoration: none;
+    line-height: 30px;
+    padding-bottom: 3.5px;
+
 }
 a {
     background:
@@ -57,3 +60,13 @@ a {
 a:hover {
     background-size: 0 3px, 100% 3px;
   }
+
+.line {
+             
+    /* Increase this as per requirement */
+    padding-bottom: 15px;
+}
+  
+.normal-underline {
+    text-decoration: underline;
+}
