@@ -70,3 +70,13 @@ a:hover {
 .normal-underline {
     text-decoration: underline;
 }
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
