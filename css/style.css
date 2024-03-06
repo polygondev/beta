@@ -44,28 +44,6 @@ header {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); /* Subtle elevation */
 }
 
-
-a {
-    color: #6200ee; /* Material You accent color */
-    text-decoration: none;
-    line-height: 30px;
-    padding-bottom: 3.5px;
-    transition: background-position 0.3s ease-in-out; /* Smoother transition */
-}
-
-/* Simplified link underline animation */
-a::after { 
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    background: #6200ee; /* Match accent color */
-    transition: width .3s;
-}
-a:hover::after { 
-    width: 100%; 
-}
-
 /* Grid Styles */
 .grid-container {
     display: grid;
@@ -133,4 +111,33 @@ tr:nth-child(1) td:nth-child(2) {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+/* LINK ANIMATION */
+a {
+    color: #6300EE;
+    text-decoration: none;
+}
+
+a {
+    background:
+            linear-gradient(
+                    to right,
+                    rgb(255, 255, 255),
+                    rgb(255, 255, 255)
+            ),
+            linear-gradient(
+                    to right,
+                    rgb(99, 0, 238),
+                    rgb(99, 0, 238),
+                    rgb(99, 0, 238)
+            );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+a:hover {
+    background-size: 0 3px, 100% 3px;
 }
