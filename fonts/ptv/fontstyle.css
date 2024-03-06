@@ -1,20 +1,20 @@
 @font-face {
-    font-family: AusPostBold;
-    src: url(APTypeProText-Bold.woff2);
+    font-family: "NetworkBold";
+    src: url("Network Sans Bold.woff2");
 }
 
 @font-face {
-    font-family: AusPost;
-    src: url(APTypeProText-Regular.woff2);
+    font-family: "NetworkSans";
+    src: url("Network Sans Regular.woff2");
 }
 
 h5 {
-    font-family: AusPostBold;
+    font-family: "NetworkBold";
     font-size: 60px;
     margin: 10px;
 }
 h6 {
-    font-family: AusPost;
+    font-family: "NetworkSans";
     font-size: 40px;
     margin: 7.5px;
 }
