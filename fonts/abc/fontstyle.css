@@ -1,0 +1,20 @@
+@font-face {
+    font-family: ABCbold;
+    src: url(abcsansnova-bold.woff2);
+}
+
+@font-face {
+    font-family: ABC;
+    src: url(abcsansnova-regular.woff2);
+}
+
+h5 {
+    font-family: ABCbold;
+    font-size: 60px;
+    margin: 10px;
+}
+h6 {
+    font-family: ABC;
+    font-size: 40px;
+    margin: 7.5px;
+}
