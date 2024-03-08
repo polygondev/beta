@@ -15,15 +15,25 @@ body {
     color:  #333333; /* Dark primary text color */
 }
 
+h1 {
+    color: #6200ee;
+}
+
 .nav{
     list-style:none;
-    margin:0;
-    padding:0;
-    background-color: #ffffff; /* Elevated surface color */
-    border-radius: 20px; /* Rounded corners */
+    background-color: #6300EE; /* Elevated surface color */
     margin: 0 auto; /* Centers the navigation bar*/
-    width: 80%;
+    width: 95%;
     text-align: center;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    flex-grow: 1;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: white;
 }
 .nav li{
     display:inline-block; /* Adjust spacing as needed */
@@ -33,6 +43,34 @@ body {
     display:inline-block;
     padding: 8px 16px;  /* Increase padding for touch targets */
     border-radius: 4px;   /* Slightly rounded button-like effect */
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav a {
+    background:
+            linear-gradient(
+                    to right,
+                    rgb(99, 0, 238),
+                    rgb(99, 0, 238)
+            ),
+            linear-gradient(
+                    to right,
+                    rgb(248, 249, 250),
+                    rgb(248, 249, 250),
+                    rgb(248, 249, 250)
+            );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.nav a:hover {
+    background-size: 0 3px, 100% 3px;
 }
 
 header {
@@ -53,13 +91,27 @@ header {
 }
 
 /* Box Styles */
+.bigbox {
+    display: inline-block;
+    flex-grow: 1;
+    width: calc(95%);
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
+
+}
+
 .box {
     display: inline-block;
     flex-grow: 1;
     width: calc(100% * (1/4) - 10px - 1px);
     background-color: var(--white);
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 1rem;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14),
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
@@ -136,8 +188,8 @@ a {
     background:
             linear-gradient(
                     to right,
-                    rgb(255, 255, 255),
-                    rgb(255, 255, 255)
+                    rgb(248, 249, 250),
+                    rgb(248, 249, 250)
             ),
             linear-gradient(
                     to right,
@@ -161,4 +213,24 @@ h5 {
     margin-top: 0;
     margin-bottom: 5px; /* Small margin for spacing */
     text-align: center;
+    background-color: #6300EE; /* Elevated surface color */
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+footer {
+    background-color: #ececec;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
