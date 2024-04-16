@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'APTypeProText'; /* Create a name for your font */
-    src: url('downloads/fonts/APTypeProText-Bold.woff2') format('woff2'); 
-    font-weight: bold; 
+    src: url('downloads/fonts/APTypeProText-Bold.woff2') format('woff2');
+    font-weight: bold;
     font-style: normal; /* Add if the font is not a bold variant */
 }
 
@@ -77,7 +77,7 @@ header {
     text-align: center;
     background-color: #ffd500; /* Consider a primary color */
     color: #000000; /* High contrast against primary color */
-    padding: 2%; 
+    padding: 2%;
     border-radius: 12px; /* More generous border-radius */
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); /* Subtle elevation */
 }

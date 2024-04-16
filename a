@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+    db:
+        image: mariadb:latest
+        environment:
+          - MYSQL_ROOT_PASSWORD=Callumjohn_9
+          - MYSQL_DATABASE=nextcloud_db
+          - MYSQL_USER=nextcloud_user
+          - MYSQL_PASSWORD=Callumjohn_9
+        volumes:
+          - db_data:/var/lib/mysql
+    nextcloud:
+        image: nextcloud:latest
+        links:
+          - db
+        environment:
+          - MYSQL_DATABASE=nextcloud_db
+          - MYSQL_USER=nextcloud_user
+          - MYSQL_PASSWORD=Callumjohn_9
+          - MYSQL_HOST=db
+        labels:
+          - "traefik.enable=true"
+          - "traefik.http.routers.nextcloud.rule=Host(`cloud.polyg.online`)"
+          - "traefik.http.routers.nextcloud.entrypoints=websecure"
+          - "traefik.http.services.nextcloud.loadbalancer.server.port=80"
+
+    traefik:
+        image: traefik:latest
+        ports:
+          - "80:80"
+        volumes:
+          - /var/lib/traefik:/etc/traefik
+          - ./acme.json:/acme.json
+        command:
+          - --providers.docker
+          - --entrypoints.web.address=:80
+          - --entrypoints.websecure.address=:443
+          - --certificatesresolvers.myresolver.acme.email=your@email.com
+          - --certificatesresolvers.myresolver.acme.storage=/acme.json
+          - --certificatesresolvers.myresolver.acme.tlschallenge=true # Or other challenge type if needed
+        # ... (Potentially additional network configuration)
+
+volumes:
+  db_data:

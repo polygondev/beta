@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Polygon</title>
-        <link rel="stylesheet" href="css/old.css">
-        <link rel="icon" href="https://images2.imgbox.com/1c/5e/bNMEyCvv_o.png" type="image/x-icon">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGN58BWNQS"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<head>
+    <meta charset="utf-8">
+    <title>Polygon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://images2.imgbox.com/1c/5e/bNMEyCvv_o.png" type="image/x-icon">
 
-        gtag('config', 'G-BGN58BWNQS');
-        </script>        
-    </head>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css" />
+    <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+
+</head>
+
     <body>
         <ul class="nav">
             <li>Polygon</li>
@@ -22,11 +19,27 @@
             <li><a href="fonts.html">Fonts</a></li>
             <li><a href="videos.html">Videos</a></li>
         </ul>
+
         <h1>Videos</h1>
         <div style="border-radius: 20px; overflow: hidden;">
-        <iframe src='https://www.youtube.com/embed/?listType=playlist&list=UUHIKbdT2tWJ4nlqV5g-aTBA' frameborder='0' allowfullscreen />
-        <p>Latest Video: <strong>Take Off from Nadi Int'l (NAN)</strong>. <a href="https://odysee.com/@polygontransit:0/trains-at-lara-%28from-a-drone%29-polygon:3">Also watch on Odysee</a></p>
+            <div class="video-container"> <video id="player" poster="https://assets.polyg.online/videos/BendigoEaster/bes.png">
+                <source src="https://assets.polyg.online/videos/BendigoEaster/Castlemaine.mov" type="video/mp4">
+            </video>
+            </div>
+            <h1>Bendigo Easter Special at Castlemaine</h1>
+            <p><a href="https://youtu.be/5mBaw-OfWeY">Also watch on YouTube<br></a>
+                When using my content (within the limits of fair use) please make sure to credit me. If you are unsure, please contact me on Discord (polygontransit)
+                or email <a href="mailto:hello@polyg.online?subject=Request%20to%20use%20video">hello@polyg.online</a>.</p>
+        </div>
+
         <footer>
             <p>MMXXIV Polygon • Version γ1</p>
         </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const player = new Plyr('#player');
+            });
+        </script>
+    </body>
+
 </html>

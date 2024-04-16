@@ -8,13 +8,13 @@
     src: url(abcsansnova-regular.woff2);
 }
 
-h5 {
-    font-family: ABCbold;
+h4 {
+    font-family: ABCbold, sans-serif;
     font-size: 60px;
     margin: 10px;
 }
 h6 {
-    font-family: ABC;
+    font-family: ABC, sans-serif;
     font-size: 40px;
     margin: 7.5px;
 }
