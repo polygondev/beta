@@ -9,7 +9,13 @@
 ## |_|            |___/ |___/                              ##
 #############################################################
 
-User-agent: *
+User-agent: Googlebot
+Disallow /timelapse.html
+
+User-agent: Bingbot
+Disallow /timelapse.html
+
+User-agent: Amazonbot
 Disallow /timelapse.html
 
 User-agent: *
