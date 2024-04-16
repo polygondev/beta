@@ -10,7 +10,7 @@
 
 body {
     padding: 2.5%;
-    font-family: 'Google Sans', 'Roboto', 'Helvetica Neue', sans-serif; /* Material You font */
+    font-family: 'Google Sans', 'Roboto', 'Segoe UI', 'Avenir', 'Helvetica Neue', sans-serif; /* Material You font */
     background-color: #f8f9fa; /* Light, neutral background */
     color:  #333333; /* Dark primary text color */
 }
@@ -222,6 +222,7 @@ h5 {
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
+
 footer {
     background-color: #ececec;
     padding: 1rem;
@@ -231,4 +232,21 @@ footer {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14),
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.alert{
+    list-style:none;
+    background-color: #ff6200; /* Elevated surface color */
+    margin: 0 auto; /* Centers the navigation bar*/
+    width: 95%;
+    text-align: center;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    flex-grow: 1;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: white;
 }
