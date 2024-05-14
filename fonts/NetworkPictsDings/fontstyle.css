@@ -1,1 +1,20 @@
-@font-face {  font-family: "Dings";  src: url("fonts/NetworkPictsDings/NetworkDings.otf");  }
+@font-face {
+    font-family: "NetworkPicts";
+    src: url("NetworkPicts.otf");
+}
+
+@font-face {
+    font-family: "NetworkDings";
+    src: url("NetworkDings.otf");
+}
+
+h4 {
+    font-family: "NetworkPicts";
+    font-size: 60px;
+    margin: 10px;
+}
+h6 {
+    font-family: "NetworkDings";
+    font-size: 40px;    
+    margin: 7.5px;
+}
