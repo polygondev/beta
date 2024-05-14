@@ -1,76 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://use.typekit.net/owz6ids.css");
 
 @font-face {
-    font-family: 'APTypeProText'; /* Create a name for your font */
-    src: url('downloads/fonts/APTypeProText-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal; /* Add if the font is not a bold variant */
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 body {
     padding: 2.5%;
-    font-family: 'Google Sans', 'Roboto', 'Segoe UI', 'Avenir', 'Helvetica Neue', sans-serif; /* Material You font */
+    font-family: 'neue-haas-grotesk-display', 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', 'Segoe UI', 'Avenir', sans-serif; /* Material You font */
     background-color: #f8f9fa; /* Light, neutral background */
     color:  #333333; /* Dark primary text color */
 }
 
 h1 {
-    color: #6200ee;
+    color: #333333;
 }
 
-.nav{
-    list-style:none;
-    background-color: #6300EE; /* Elevated surface color */
-    margin: 0 auto; /* Centers the navigation bar*/
-    width: 95%;
-    text-align: center;
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-    flex-grow: 1;
-    display: inline-block;
-    padding: 30px;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    color: white;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-.nav li{
-    display:inline-block; /* Adjust spacing as needed */
-    margin-right: 16px;
+
+li {
+    float: left;
 }
-.nav a{
-    display:inline-block;
-    padding: 8px 16px;  /* Increase padding for touch targets */
-    border-radius: 4px;   /* Slightly rounded button-like effect */
+
+.nav {
+    margin: 50px auto 20px auto;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
 }
 
 .nav a {
-    color: #ffffff;
     text-decoration: none;
+    font-weight: 900;
+    margin: 0 10px 0 10px;
+    position: relative;
 }
 
-.nav a {
-    background:
-            linear-gradient(
-                    to right,
-                    rgb(99, 0, 238),
-                    rgb(99, 0, 238)
-            ),
-            linear-gradient(
-                    to right,
-                    rgb(248, 249, 250),
-                    rgb(248, 249, 250),
-                    rgb(248, 249, 250)
-            );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
+.nav li {
+    color: #333333;
+    margin: 0 10px 0 10px;
+    position: relative;
 }
 
-.nav a:hover {
-    background-size: 0 3px, 100% 3px;
+.nav a:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    content: '';
+    -webkit-transform: translateY(8px);
+    opacity: 0;
+    transition-property: -webkit-transform, opacity;
+    transition-duration: .3s;
+}
+
+.nav a:hover:before {
+    -webkit-transform: translateY(0);
+    opacity: 1;
 }
 
 header {
@@ -91,30 +102,12 @@ header {
 }
 
 /* Box Styles */
-.bigbox {
-    display: inline-block;
-    flex-grow: 1;
-    width: calc(95%);
-    background-color: var(--white);
-    padding: 30px;
-    border-radius: 1rem;
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
 .box {
     display: inline-block;
     flex-grow: 1;
     width: calc(100% * (1/4) - 10px - 1px);
     background-color: var(--white);
-    padding: 30px;
     border-radius: 1rem;
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .box span{
@@ -129,7 +122,7 @@ th, td {
 }
 
 table { border-collapse: collapse; }
-tr:nth-child(1) { border-bottom: solid #6200ee thin; }
+tr:nth-child(1) { border-bottom: solid #333333 thin; }
 tr:nth-child(1) td:nth-child(2) {
     border-right: 1px solid transparent; /* Transparent border */
 }
@@ -138,7 +131,7 @@ tr:nth-child(1) td:nth-child(2) {
 
 /* Button */
 .button {
-    font-family: 'Google Sans', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family: 'neue-haas-grotesk-display', 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', 'Segoe UI', 'Avenir', sans-serif; /* Material You font */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -154,12 +147,12 @@ tr:nth-child(1) td:nth-child(2) {
 .button1 {
     background-color: #f8f9fa;
     color: black;
-    border: 2px solid #6200ee;
+    border: 2px solid #333333;
     border-radius: 100px;
 }
 
 .button1:hover {
-    background-color: #6200ee;
+    background-color: #333333;
     color: white;
     border-radius: 100px;
 }
@@ -180,58 +173,37 @@ tr:nth-child(1) td:nth-child(2) {
 
 /* LINK ANIMATION */
 a {
-    color: #6300EE;
+    color: #333333;
     text-decoration: none;
 }
 
 a {
-    background:
-            linear-gradient(
-                    to right,
-                    rgb(248, 249, 250),
-                    rgb(248, 249, 250)
-            ),
-            linear-gradient(
-                    to right,
-                    rgb(99, 0, 238),
-                    rgb(99, 0, 238),
-                    rgb(99, 0, 238)
-            );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
 }
 
-a:hover {
-    background-size: 0 3px, 100% 3px;
+a:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    content: '';
+    -webkit-transform: translateY(8px);
+    opacity: 0;
+    transition-property: -webkit-transform, opacity;
+    transition-duration: .3s;
 }
 
-h5 {
-    font-size: 3rem;
-    line-height: 1.1;
-    margin-top: 1rem;
-    margin-bottom: 5px; /* Small margin for spacing */
-    text-align: center;
-    background-color: #6300EE; /* Elevated surface color */
-    color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+a:hover:before {
+    -webkit-transform: translateY(0);
+    opacity: 1;
 }
-
 
 footer {
-    background-color: #ececec;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    border-top: 2px solid #eee;
 }
 
 .alert{
@@ -249,4 +221,8 @@ footer {
     border-radius: 1rem;
     margin-bottom: 1rem;
     color: white;
+}
+
+hr {
+    border: 2px solid #eee;
 }

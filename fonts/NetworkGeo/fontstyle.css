@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "NetworkGeoBold";
+    src: url("Network-Geo-Bold.woff2");
+}
+
+@font-face {
+    font-family: "NetworkGeo";
+    src: url("Network-Geo-Regular.woff2");
+}
+
+h4 {
+    font-family: "NetworkGeoBold";
+    font-size: 60px;
+    margin: 10px;
+}
+h6 {
+    font-family: "NetworkGeo";
+    font-size: 40px;
+    margin: 7.5px;
+}

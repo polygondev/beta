@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'AusPost'; /* Create a name for your font */
+    src: url('https://cdn.polyg.online/APTypeProText-Medium.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'ABC'; /* Create a name for your font */
+    src: url('https://cdn.polyg.online/abcsansnova-regular.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Network Sans'; /* Create a name for your font */
+    src: url('fonts/NetworkSans.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Network Geo'; /* Create a name for your font */
+    src: url('fonts/NetworkGeo.woff2') format('woff2');
+    font-weight: bold;
+}
+
