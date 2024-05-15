@@ -1,11 +1,11 @@
 @font-face {
     font-family: "NetworkGeoBold";
-    src: url("Network-Geo-Bold.woff2");
+    src: "Network-Geo-Bold.woff2";
 }
 
 @font-face {
     font-family: "NetworkGeo";
-    src: url("Network-Geo-Regular.woff2");
+    src: "Network-Geo-Regular.woff2";
 }
 
 h4 {
