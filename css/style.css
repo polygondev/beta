@@ -14,6 +14,18 @@
 
 @font-face {
     font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -29,6 +41,10 @@ body {
     font-family: 'neue-haas-grotesk-display', 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', 'Segoe UI', 'Avenir', sans-serif; /* Material You font */
     background-color: #f8f9fa; /* Light, neutral background */
     color:  #333333; /* Dark primary text color */
+}
+
+p {
+    font-weight:400;
 }
 
 h1 {
@@ -179,7 +195,7 @@ a {
 
 a {
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 600;
     position: relative;
 }
 
