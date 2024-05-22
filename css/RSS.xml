@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Polygon</title>
+        <link>https://polyg.online</link>
+        <description>Updates on the polyg.online website.</description>
+            <item>
+            <title>Article 3</title>
+            <link>polyg.online</link>
+            <guid>example.com/3</guid>
+            <pubDate>Wed, 27 Nov 2013 13:20:00 GMT</pubDate>
+            <description>My newest article.</description>
+        </item>
+    </channel>
+</rss>

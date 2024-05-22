@@ -89,7 +89,7 @@ li {
     height: 3px;
     background-color: #000;
     content: '';
-    -webkit-transform: translateY(8px);
+    -webkit-`transform: translateY(8px);
     opacity: 0;
     transition-property: -webkit-transform, opacity;
     transition-duration: .3s;
